@@ -5,8 +5,7 @@ class Auto:
         self.huippunopeus = huippunopeus
         self.nopeusNyt = nopeusNyt
         self.kuljettumatka = kuljettumatka
-    
-    
+
 
 auto1 = Auto("ABC-123", 142)
 print({auto1})
