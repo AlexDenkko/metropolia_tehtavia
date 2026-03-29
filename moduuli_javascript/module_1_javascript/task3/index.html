@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello Javascript</title>
+  </head>
+  <body>
+    <h1>Task3</h1>
+    <p id="target"></p>
+    <script>
+      "user strict";
+      let sum = 0;
+      for (let i = 1; i <= 3; i++) {
+        let number = prompt("Enter a number:");
+        sum += parseInt(number);
+      }
+      console.log("The sum of the numbers is: " + sum);
+      let average = sum / 3;
+      console.log("The average of the numbers is: " + average);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello Javascript</title>
+  </head>
+  <body>
+    <h1>Task4</h1>
+    <p id="target"></p>
+    <script>
+      "use strict";
+      let randomNumber = Math.floor(Math.random() * 4) + 1;
+      console.log("Random number generated: " + randomNumber);
+
+      const name = prompt("What is your name?");
+
+      switch (randomNumber) {
+        case 1:
+          console.log("Hello " + name + "! You going to Gryffindor!");
+          document.querySelector("#target").innerHTML =
+            "Hello, " + name + "! You going to Gryffindor!";
+          break;
+        case 2:
+          console.log("Hello " + name + "! You going to Slytherin!");
+          document.querySelector("#target").innerHTML =
+            "Hello, " + name + "! You going to Slytherin!";
+          break;
+        case 3:
+          console.log("Hello " + name + "! You going to Ravenclaw!");
+          document.querySelector("#target").innerHTML =
+            "Hello, " + name + "! You going to Ravenclaw!";
+          break;
+        case 4:
+          console.log("Hello " + name + "! You going to Hufflepuff!");
+          document.querySelector("#target").innerHTML =
+            "Hello, " + name + "! You going to Hufflepuff!";
+          break;
+      }
+    </script>
+  </body>
+</html>
