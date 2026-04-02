@@ -27,7 +27,6 @@ class Polttomoottoriauto(Auto):
         self.tankin_koko = tankin_koko
 
 
-# Pääohjelma
 sahkoauto = Sahkoauto("ABC-15", 180, 52.5)
 polttoauto = Polttomoottoriauto("ACD-123", 165, 32.3)
 
