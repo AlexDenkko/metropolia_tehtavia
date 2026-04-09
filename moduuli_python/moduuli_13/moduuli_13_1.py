@@ -12,15 +12,21 @@ app = Flask(__name__)
 def alkuluku(luku):
     #kokonaisluku intiksi
     luku = int(luku)
-    for x in range(2, luku):
-        if kokonaisluku % x == 0:
-            onko_alkuluku = False
-            break
-        #vastauksen luonti ja palautus
-        vastaus = {
-            "Number" : luku,
-            "isPrime" : onko_alkuluku
-        }
+    onko_alkuluku = True
+    
+    if luku < 2:
+        onko_alkuluku = False
+    else:
+        for x in range(2, luku):
+            if luku % x == 0:
+                onko_alkuluku = False
+                break
+    
+    #vastauksen luonti ja palautus
+    vastaus = {
+        "Number" : luku,
+        "isPrime" : onko_alkuluku
+    }
 
     return vastaus
 
